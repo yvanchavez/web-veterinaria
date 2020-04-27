@@ -155,6 +155,7 @@ html{
 
 
 .portada h1{
+    padding-top: 200px;
     margin-right: 10%;
     width: 50%;
     font-size: 70px;
@@ -461,13 +462,13 @@ footer{
        font-size: 25px;
        width: 95%;
        padding-top: 90px;
-       padding-left: 320px;
+       padding-left: 340px;
        
     }
 
     .portada p{
         font-size: 15px;
-        padding-left: 320px;
+        padding-left: 340px;
         width: 95%;
     }
 
