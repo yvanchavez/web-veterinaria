@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    min-width: 1200px;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section{
+    margin-top: 30px;
+}
+
+.boton{
+    border-radius: 20px;
+    background-color: #EF5030;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.boton:hover{
+    transform: scale(1.2);
+}
+
+/* HEADER */
+
+/* redes */
+.redes{
+    display: flex;
+    align-items: center;
+    background-color: #363636;
+    height: 10vh;
+}
+
+.redes .contenedor{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.redes__izquierdo{
+    display: flex;    
+    align-items: center;
+}
+
+.redes__izquierdo img {
+    width: 30px;
+}
+
+#call{
+    margin-left: 120px;
+}
+
+.redes__izquierdo span{
+    font-size: 20px;
+    margin-left: 15px;
+    color: white;
+}
+
+.redes__derecho a{
+    width: 32px;
+    margin-right: 40px;
+}
+
+.redes__derecho a:last-child{
+    margin-right: 0px;
+}
+
+
+
+/* vinculos */
+.vinculos{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #F19F1F;
+    height: 20vh;
+}
+
+.vinculos .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vinculos__izquierdo{
+    display: flex;    
+    align-items: center;
+}
+
+.vinculos__izquierdo img{
+    width: 100px;
+}
+
+.vinculos__izquierdo span{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 25px;
+    color: white;
+}
+
+.vinculos__derecha{
+    display: flex;
+    align-items: center;
+}
+
+.vinculos__derecha ul{
+    display: flex;
+    list-style: none;
+}
+
+.vinculos__derecha a{
+    color: white;
+   text-decoration: none;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.vinculos__derecha a:hover{
+    color:#363636;
+}
+
+
+
+.vinculos__derecha li:not(:last-child){
+    
+   margin-right: 40px;
+}
+
+/* portada */
+.portada{
+    max-width: 100%;
+    height: 70vh;
+    background-image: url(./img/slide-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.portada h1{
+    margin-right: 10%;
+    width: 50%;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.portada p{
+    margin-top: 20px;
+    margin-right:10%;    
+    margin-bottom: 200px;
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* MAIN */
+
+/* servicios */
+
+section .titulo{
+    text-align: center;
+    color: #108896;
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card{
+    width: 350px;
+    height: 600px;
+    background-color: #FFEFD5;
+    border-radius: 10px;
+    border:1px solid #989797;
+}
+
+.card .imagen{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.card .imagen img{
+    width: 310px;
+    height: 250px;
+}
+.card .contenido{
+    width: 310px;
+    height: 230px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card .contenido h3{
+    padding: 10px 15px;
+    text-align: center;
+    color: #292929;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card .contenido p{
+    padding: 0 15px;
+    text-align: left;
+    color: #989797;
+    font-size: 20px;
+}
+
+.card-boton{
+    width: 100%;
+    padding: 20px;
+    text-align: end;
+}
+
+/* nosotros */
+.nosotros{
+    
+    background-color: #FFEFD5;
+}
+
+.nosotros .contenedor{
+    display: flex;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.nosotros img{
+    width: 600px;
+}
+
+
+
+.nosotros h2{
+    text-align: center;
+    color: #108896;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.nosotros p{
+    padding: 20px 100px;
+    text-align: left;
+    color: #989797;
+    font-size: 20px;
+}
+
+/* contactanos */
+
+.contactanos{
+
+    background-color: #EF5030 ;
+    padding: 40px;
+}
+
+.contactanos-contenedor{
+    background-color: #FFEFD5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contactanos-contenedor h2{
+    text-align: center;
+    color: #108896;
+    font-size: 70px;
+    font-weight: bold;
+}
+.contactanos-contenedor-interno{
+    display: flex;
+    padding: 40px;
+    
+}
+
+.descripcion{
+    flex: 1;
+}
+
+.descripcion p{
+    width: 600px;
+    text-align: left;
+    color: #989797;
+    font-size: 20px;
+}
+
+.formulario{
+    flex: 2;
+    
+}
+
+.form-sup{
+    padding:0 20px;
+    margin-left: 100px;
+    display: flex;
+
+}
+
+.form-sup input{
+    width: 50%;
+    margin-left: 30px;
+
+    border: 0;
+    border-radius: 10px;
+    padding:10px 20px;
+}
+
+.form-sup input:first-child{
+    margin-left: 0px;
+}
+
+.form-mid{
+    padding: 20px;
+    margin-left: 100px;
+}
+
+
+
+.form-mid textarea{
+    width: 100%;
+
+    border: 0;
+    border-radius: 10px;
+    padding:10px 20px;
+}
+
+.form-inf{
+    padding: 20px;
+    text-align: end;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#EF5030;
+    opacity: 0.4; /* Firefox */
+  }
+
+  /* FOOTER */
+
+footer{
+      background-color: #363636;
+      display: flex;
+      color: #108896;
+      padding: 20px;
+}
+
+.footer-izquierdo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+  
+.footer-derecho{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-derecho img{
+    width: 30px;
+    margin-top: 15px;
+}
+
+
+  
+
+@media (max-width: 720px) {
+
+    html{
+        min-width: auto;
+    }
+
+    .contenedor{
+        width: 98%;
+    }
+    
+    .redes{
+        height: 10vh;
+    }
+    .redes .contenedor{
+        
+        display: block;
+        
+    }
+
+    .redes__derecho{
+        margin-top: 10px;
+    }
+
+    .redes__derecho img{
+        width: 25px;
+    }
+
+    .vinculos{
+        height: 40vh;
+    }
+    .vinculos .contenedor{
+        display: block;
+    }
+
+    .vinculos__izquierdo{
+        padding: 0 0 10px 100px;
+    }
+    .vinculos__derecha ul{
+        width: 100%;
+        display: block;
+    }
+
+    .vinculos__derecha li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    .vinculos__derecha li:first-child{
+        border-top:1px solid white ;
+    }
+
+    .vinculos__derecha li:hover{
+        background-color: #B34F47;
+    }
+    .vinculos__derecha a:hover{
+        color:white;
+    }
+
+    
+
+    .portada{
+        display: block;
+        height: 50vh;
+    }
+
+    .portada h1{
+       font-size: 25px;
+       width: 95%;
+       padding-top: 90px;
+       padding-left: 320px;
+       
+    }
+
+    .portada p{
+        font-size: 15px;
+        padding-left: 320px;
+        width: 95%;
+    }
+
+    .servicios .titulo h2{
+        font-size: 35px;
+    }
+
+    .servicios .cards{
+        display:block;
+    }
+
+    .servicios .card{
+        margin: 20px auto;
+    }
+
+    .nosotros .contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .nosotros .imagen{
+        margin: 0 auto;
+    }
+
+    .nosotros img{
+        width: 400px;
+    }
+
+    .nosotros h2{
+        font-size: 35px;
+    }
+    .contactanos-contenedor-interno{
+        display: block;
+        
+    }
+    .contactanos h2{
+        font-size: 35px;
+    }
+
+    .contactanos p{
+        font-size: 15px;
+        width: 98%;
+    }
+
+    .contactanos .formulario{
+        margin-top: 20px;
+    }
+
+    .form-sup{
+        padding:0 0px;
+        margin-left: 0px;
+    
+    }
+
+    .form-mid{
+        padding: 10px 0;
+        margin-left: 0px;
+    }
+    
+    
+
+   }
