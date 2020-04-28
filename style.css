@@ -35,7 +35,9 @@ html{
 .boton:hover{
     transform: scale(1.2);
 }
-
+p{
+    color: #989797;
+}
 /* HEADER */
 
 /* redes */
@@ -180,67 +182,61 @@ html{
 
 /* servicios */
 
-section .titulo{
+.servicios .titulo h2{
     text-align: center;
     color: #108896;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 
 }
 
 .cards{
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
 
 .card{
-    width: 350px;
-    height: 600px;
-    background-color: #FFEFD5;
-    border-radius: 10px;
-    border:1px solid #787878;
-    box-shadow: 1px 1px 10px #787878;
-}
-
-.card .imagen{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.card .imagen img{
-    width: 310px;
-    height: 250px;
-}
-.card .contenido{
-    width: 310px;
-    height: 230px;
-    margin-left: 20px;
-    margin-top: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.card .contenido h3{
-    padding: 10px 15px;
+    width: 330px;
+    height: 430px;    
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
     text-align: center;
-    color: #292929;
-    font-size: 35px;
-    font-weight: bold;
+    transition: all 0.25s;
 }
 
-.card .contenido p{
-    padding: 0 15px;
-    text-align: left;
-    color: #989797;
-    font-size: 20px;
+.cards .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-boton{
-    width: 100%;
-    padding: 20px;
-    text-align: end;
+.cards .card img{
+    width: 330px;
+    height: 220px;
 }
+
+.cards .card h3{
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.cards .card p{
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cards .card button{
+    
+}
+
+
 
 /* nosotros */
 .nosotros{
@@ -263,7 +259,7 @@ section .titulo{
 .nosotros h2{
     text-align: center;
     color: #108896;
-    font-size: 70px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -291,7 +287,7 @@ section .titulo{
 .contactanos-contenedor h2{
     text-align: center;
     color: #108896;
-    font-size: 70px;
+    font-size: 30px;
     font-weight: bold;
 }
 .contactanos-contenedor-interno{
@@ -479,18 +475,14 @@ footer{
     }
 
     .servicios .titulo h2{
-        font-size: 35px;
+        font-size: 25px;
     }
 
+    
     .servicios .cards{
-        display:block;
-        margin: 0 calc(50% - 150px);
+        height: 870px;
     }
-
-    .servicios .card{
-        margin-top: 10px;
-    }
-
+    
     
 
     .nosotros .contenedor{
@@ -506,14 +498,14 @@ footer{
     }
 
     .nosotros h2{
-        font-size: 35px;
+        font-size: 25px;
     }
     .contactanos-contenedor-interno{
         display: block;
         
     }
     .contactanos h2{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .contactanos p{
@@ -554,38 +546,11 @@ footer{
         font-size: 30px;
     }
 
-
     .servicios .cards{
-        margin: 0 0px;
-        
-    }
-
-    .servicios .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .card .imagen{
-        margin-left: 0;
-    }
-        
-    .card .imagen img{
-        width: 380px;
-        height: 250px;
-    }
-
-   
-    
-    .card .contenido{
-        width: 380px;
-        margin-left: 0;
+        height: 1320px;
     }
     
-    .card .contenido p , .nosotros p{
-        font-size: 16px;
-        padding: 20px 10px;
-    }
+
+
     
    }
