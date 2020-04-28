@@ -72,8 +72,11 @@ html{
 }
 
 .redes__derecho a{
-    width: 32px;
     margin-right: 40px;
+}
+
+.redes__derecho img{
+    width: 32px;
 }
 
 .redes__derecho a:last-child{
@@ -149,14 +152,14 @@ html{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
 
 .portada h1{
-    padding-top: 200px;
-    margin-right: 10%;
+    margin-left: 450px;
+    margin-top: 150px;
     width: 50%;
     font-size: 70px;
     font-weight: bold;
@@ -164,8 +167,8 @@ html{
 }
 
 .portada p{
-    margin-top: 20px;
-    margin-right:10%;    
+    margin-left: 450px;
+    margin-top: 20px;  
     margin-bottom: 200px;
     width: 50%;
     font-size: 30px;
@@ -180,7 +183,7 @@ html{
 section .titulo{
     text-align: center;
     color: #108896;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
 
 }
@@ -196,7 +199,8 @@ section .titulo{
     height: 600px;
     background-color: #FFEFD5;
     border-radius: 10px;
-    border:1px solid #989797;
+    border:1px solid #787878;
+    box-shadow: 1px 1px 10px #787878;
 }
 
 .card .imagen{
@@ -390,9 +394,9 @@ footer{
 }
 
 
-  
+/* 1024 */
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
 
     html{
         min-width: auto;
@@ -403,7 +407,7 @@ footer{
     }
     
     .redes{
-        height: 10vh;
+        height: 15vh;
     }
     .redes .contenedor{
         
@@ -428,6 +432,10 @@ footer{
 
     .vinculos__izquierdo{
         padding: 0 0 10px 100px;
+    }
+
+    .vinculos__izquierdo img{
+        margin-left: 30px;
     }
     .vinculos__derecha ul{
         width: 100%;
@@ -454,22 +462,20 @@ footer{
     
 
     .portada{
-        display: block;
-        height: 50vh;
+        height: 45vh;
     }
 
     .portada h1{
+        margin-left: 350px ;
+        width: 300px;
        font-size: 25px;
-       width: 95%;
-       padding-top: 90px;
-       padding-left: 340px;
        
     }
 
     .portada p{
         font-size: 15px;
-        padding-left: 340px;
-        width: 95%;
+        margin-left: 350px ;
+        width: 300px;
     }
 
     .servicios .titulo h2{
@@ -478,11 +484,14 @@ footer{
 
     .servicios .cards{
         display:block;
+        margin: 0 calc(50% - 150px);
     }
 
     .servicios .card{
-        margin: 20px auto;
+        margin-top: 10px;
     }
+
+    
 
     .nosotros .contenedor{
         flex-direction: column-reverse;
@@ -529,4 +538,54 @@ footer{
     
     
 
+   }
+
+   /* 768 */
+   @media (max-width: 768px) {
+
+    .vinculos__derecha a{
+        font-size: 15px;
+    }
+    .vinculos__izquierdo img{
+        width: 60px;
+    }
+
+    .vinculos__izquierdo span{
+        font-size: 30px;
+    }
+
+
+    .servicios .cards{
+        margin: 0 0px;
+        
+    }
+
+    .servicios .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card .imagen{
+        margin-left: 0;
+    }
+        
+    .card .imagen img{
+        width: 380px;
+        height: 250px;
+    }
+
+   
+    
+    .card .contenido{
+        width: 380px;
+        margin-left: 0;
+    }
+    
+    .card .contenido p , .nosotros p{
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+    
    }
