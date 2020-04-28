@@ -356,9 +356,9 @@ section .titulo{
     text-align: end;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
     color:#EF5030;
-    opacity: 0.4; /* Firefox */
+    opacity: 0.6; 
   }
 
   /* FOOTER */
