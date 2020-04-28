@@ -64,17 +64,22 @@ p{
 }
 
 .redes__izquierdo img {
-    width: 30px;
+    width: 20px;
 }
 
 #call{
     margin-left: 40px;
 }
 
+
 .redes__izquierdo span{
     font-size: 20px;
     margin-left: 15px;
     color: white;
+}
+
+.redes__izquierdo .map-marker{
+    color: tomato;
 }
 
 .redes__derecho a{
