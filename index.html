@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -26,20 +27,26 @@
       </nav>
 
       <nav class="vinculos">
-        <div class="contenedor">
-          <div class="vinculos__izquierdo">
-            <img src="./img/perro.png" alt="" />
-            <span>Dr. Pet's</span>
-          </div>
-          <div class="vinculos__derecha">
-            <ul>
-              <li><a href="#header">INICIO</a></li>
-              <li><a href="#servicios">SERVICIOS</a></li>
-              <li><a href="#nosotros">NOSOTROS</a></li>
-              <li><a href="#contactanos">CONTACTANOS</a></li>
+        
+            <h2 class="logo"><i class="fas fa-paw"></i> Dr. Pet's</h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="mostrar-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+          
+         
+            <ul class="menu">
+              <a href="#header">INICIO</a>
+              <a href="#servicios">SERVICIOS</a>
+              <a href="#nosotros">NOSOTROS</a>
+              <a href="#contactanos">CONTACTANOS</a>
+              <label for="chk" class="ocultar-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
             </ul>
-          </div>
-        </div>
+          
+        
       </nav>
 
       <div class="portada">
